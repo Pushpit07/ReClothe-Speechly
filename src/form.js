@@ -48,6 +48,11 @@ const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  window.location = "http://127.0.0.1:3000/appreciation";
+}
+
 export default function DonateForm(props) {
   const [state, setState] = useState({
        first_number_value: "",
@@ -208,6 +213,7 @@ export default function DonateForm(props) {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={handleSubmit}
           >
             Donate Now <ArrowRightIcon/>
           </Button>

@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main_div {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.signup_box {
+	position: absolute;
+	height: 745px;
+	width: 460px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	background: #fff;
+	border-radius: 12px;
+}
+	
+
+	/* CSS for submit button */
+	.submit-btn {
+		position: relative;
+		padding: 10px 30px;
+		cursor: pointer;
+		text-align: center;
+		display: block;
+		border: 0;
+		top: 50px;
+		margin-left: 100px;
+		outline: none;
+		border-radius: 30px;
+		color: white;
+		margin-top: 180px;
+		background-color: rgba(254,111,125,1);
+		font-family: OpenSans-SemiBold;
+		&:hover {
+			box-shadow: 0 0 11px rgba(33,33,33,.2);
+			background-color: rgba(254,111,125,1) !important;
+		}
+		span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+			&:after {
+				content: '\21E8';
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 0.5s;
+			}
+		}
+		&:focus {
+			background-color: rgba(254,111,125,1) !important;
+		}
+	}
+
+/* CSS for success page */
+.success_content1 {
+	color: rgba(81,81,81,1);
+	position: relative;
+	margin-left: -5px;
+	text-align: center;
+	justify-content: center;
+	font-family: OpenSans-SemiBold;
+	font-size: 25px;
+	font-weight: 500;
+	padding-top: 130px;
+}
