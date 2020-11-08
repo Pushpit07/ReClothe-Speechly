@@ -50,7 +50,7 @@ const sleep = (milliseconds) => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
-  window.location = "http://127.0.0.1:3000/appreciation";
+  window.location = "https://reclothe.herokuapp.com/appreciation";
 }
 
 export default function DonateForm(props) {
