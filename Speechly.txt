@@ -1,0 +1,41 @@
+types_of_clothes = [
+    sweater
+    sweaters
+    shirt
+    shirts
+    t-shirt
+    t-shirts
+    pant
+    pants
+    jean
+    jeans
+    trackpant
+    trackpants
+    jacket
+    jackets
+    hoodie
+    hoodies
+    blanket
+    blankets
+]
+
+number_of_clothes = [1..10]
+
+phrase = [
+    I want to 
+    I wish to 
+    I would like to
+    I am here to 
+]
+
+donate_phrase = [
+    donate
+    give
+]
+
+*donate {today} $phrase $donate_phrase a $types_of_clothes(cloth) {today}
+*donate {today} $phrase $donate_phrase $number_of_clothes(number) {old} {new} $types_of_clothes(cloth) {today}
+*donate {today} $phrase $donate_phrase $number_of_clothes(number) {old} {new} clothes {today}
+*donate {today} $phrase $donate_phrase {a} $number_of_clothes(number) {for me} {please} {today}
+*donate a $types_of_clothes(cloth) {today}
+*donate {today} {$donate_phrase} $number_of_clothes(number) {old} {new} $types_of_clothes(cloth) {from my side} {today} {please} 
