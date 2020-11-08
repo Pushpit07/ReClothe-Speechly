@@ -1,0 +1,99 @@
+.MicContainer {
+  width: 100vw;
+  height: 9.2rem;
+  position: fixed;
+  bottom: 0;
+  pointer-events: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.MicWidget {
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+}
+
+.MicWidget .GradientStop1 {
+  stop-color: #15e8b5;
+}
+.MicWidget .GradientStop2 {
+  stop-color: #4fa1f9;
+}
+
+.MicWidget .MicButton {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+}
+
+.MicWidget .MicFx {
+  top: -75%;
+  left: -75%;
+  height: 250%;
+  width: 250%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.MicWidget .MicIcon {
+  width: auto;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.MicWidget.Idle .MicIcon {
+  animation: MicOpacityPulseKeys 4.5s infinite;
+  transition: 0.25s;
+}
+
+.MicWidget.NoAudioConsent .MicIcon,
+.MicWidget.Failed .MicIcon,
+.MicWidget.NoBrowserSupport .MicIcon {
+  opacity: 0.1;
+  transition: 0.25s;
+}
+
+.MicWidget.Connecting .MicIcon,
+.MicWidget.Loading .MicIcon {
+  animation: MicOpacityPulseKeys 1s infinite;
+  transition: 0.25s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .MicColorSpin {
+    animation: MicColorSpinKeys infinite 2.5s linear;
+  }
+}
+
+@keyframes MicColorSpinKeys {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes MicOpacityPulseKeys {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
