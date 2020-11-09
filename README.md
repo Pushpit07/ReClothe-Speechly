@@ -1,6 +1,6 @@
 # ReClothe
 
-Let us accept that every house has a pile of clothes that have either been discarded or had been residing under wardrobes for ages. Let us also accept, that there're people for whom those clothes (that served no purpose to you) could be a matter of survival; life or no-life. Think of the underprivileged kids jumping with joy after having the clothes that served no purpose to you. This is ReClothe. A platform that connects people who are ready to donate clothes, to those who need them.
+Let us accept that every house has a pile of clothes that have either been discarded or had been residing under wardrobes for ages. Let us also accept, that there are people for whom those clothes (that served no purpose to you) could be a matter of survival; life or no-life. Think of the underprivileged kids jumping with joy after having the clothes that served no purpose to you. This is ReClothe. A platform that connects people who are ready to donate clothes, to those who need them.
 
 Donating clothes @ ReClothe is simpler than getting groceries for your house. To donate, go to reclothe.webflow.io, click on 'Donate'. You can either drop the pile of old clothes at the nearest ReClothe donation box (usually placed at grocery stores, cafes, etc.) OR get clothes picked up from the comfort of your home by filling the 'Pickup form'.
 
